@@ -5,7 +5,7 @@
 ```bash
 NAME="ttl.sh/cosign-demo"
 TAG="2h"
-IMAGE_TAG="${NAME}:${LABEL}"
+IMAGE_TAG="${NAME}:${TAG}"
 
 DIGEST=$(docker build -q -t ${IMAGE_TAG} .)
 IMAGE_DIGEST="${NAME}@${DIGEST}"
